@@ -1,118 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify</title>
-    <link rel="icon" type="icon" href="../image/spotify-logo.ico">
-    <link rel="stylesheet" href="/public/style.css">
-</head>
-<body class="bg-black text-gray-500 font-bold font-roboto" >
+    <link rel="icon" type="icon" href="../image/spotify-logo.ico" />
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+
+  <body class="bg-black text-gray-500 font-bold font-roboto">
     <div class="flex">
-        <!--Aqui fica o navegador de innicio e busca + Bilbioteca com playlists-->
-            <div class="fixed h-screen w-1/5 ml-2 mt-2 ">
-                <div class="bg-zinc-900">
-                    <nav class="p-2">
-                        <li class="pl-4 pt-4 pb-3 block">
-                            <a href="" class="text-lg ">Início</a>
-                        </li>
-                        <li class="pl-4 pb-4 block">
-                            <a href="" >Buscar</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="bg-zinc-900 block mt-2">
-                    <nav>
-                        <p class="text-lg block">Sua Biblioteca</p>
-                    </nav>
-                </div>
-            </div>
-            <!--area principal onde ficamas musicas-->
-            <div class="flex-1 p-4 ml-96 mt-2 bg-zinc-800 text-white">
-                <main class="text-2x1 ">
-                    <div>
-                        <li>
-                            <a href="" class="text-xl">Podcasts</a>
-                            <ul class="flex">
-                                <li class="p-4">
-                                    <a href="">
-                                        <img src="/image/CRpodcast.png" alt="Critical Role" width="150" height="150">
-                                        <h3 class="text-sm p-2">Critical Role</h3>
-                                        <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">Critical Role</p>
-                                    </a>
-                                </li>
-                                <li class="p-4 pl-2">
-                                    <a href="">
-                                        <img src="/image/flowpodcast.png" alt="Flow Podcast" width="150" height="150">
-                                        <h3 class="text-sm p-2">Flow Podcast</h3>
-                                        <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">Estudio Flow</p>
-                                    </a>
-                                </li>
-                                <li class="p-4 pl-2">
-                                    <a href="">
-                                        <img src="/image/Nerdcast.png" alt="Nerdcast" width="150" height="150">
-                                        <h3 class="text-sm p-2">Nerdcast</h3>
-                                        <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">Jovem Nerd</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">Musicas que takvez você curta</a>
-                            <ul class="flex">
-                                <li class="p-4">
-                                    <a href="">
-                                        <img src="/image/pentakill_3.png" alt="Lost Chapter" width="150" height="150">
-                                        <h3 class="text-sm p-2">III: Lost Chapter</h3>
-                                        <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">Pentakill</p>
-                                    </a>
-                                </li>
-                                <li class="p-4 pl-2">
-                                    <a href="">
-                                        <img src="/image/American_Idiot.png" alt="American Idiot" width="150" height="150">
-                                        <h3 class="text-sm p-2">American Idiot</h3>
-                                        <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">Green Day</p>
-                                    </a>
-                                </li>
-                                <li class="p-4 pl-2">
-                                    <a href="">
-                                        <img src="/image/Godhunter.png" alt="Godhunter" width="150" height="150">
-                                        <h3 class="text-sm p-2">Godhunter</h3>
-                                        <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">Aviators</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">Tocados recentemente</a>
-                            <ul class="flex">
-                                <li class="p-4">
-                                    <a href="">
-                                        <img src="/image/A_Thousand_Eyes.png" alt="A Thousand Eyes" width="150" height="150">
-                                        <h3 class="text-sm p-2">A Thousand Eyes</h3>
-                                        <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">Miracle Of Sound</p>
-                                    </a>
-                                </li>
-                                <li class="p-4 pl-2">
-                                    <a href="">
-                                        <img src="/image/Awaken.png" alt="Awaken" width="150" height="150">
-                                        <h3 class="text-sm p-2">Awaken</h3>
-                                        <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">League of Legends, Valerie Broussard, Rey Chen</p>
-                                    </a>
-                                </li>
-                                <li class="p-4 pl-2">
-                                    <a href="">
-                                        <img src="/image/elden_ring.png" alt="Elden Ring OST" width="150" height="150">
-                                        <h3 class="text-sm p-2">Godskin Apostles</h3>
-                                        <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">Tai Tomisawa</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </div>
-                </main>
-            </div>
+      <!--Aqui fica o navegador de innicio e busca + Bilbioteca com playlists-->
+      <div class="fixed h-screen w-60 ml-2 mt-2">
+        <div class="bg-zinc-900 rounded">
+          <nav class="p-2">
+            <li class="pl-4 pt-4 pb-3 block">
+              <a href="" class="text-lg">Início</a>
+            </li>
+            <li class="pl-4 pb-4 block">
+              <a href="">Buscar</a>
+            </li>
+          </nav>
         </div>
-<!---->
-</body>
+        <div class="bg-zinc-900 block mt-2 rounded">
+          <nav>
+            <p class="text-lg block">Sua Biblioteca</p>
+          </nav>
+        </div>
+      </div>
+      <!--area principal onde ficamas musicas-->
+      <div
+        class="flex-1 p-4 ml-64 mt-2 mr-2 mb-16 bg-zinc-800 text-white rounded"
+      >
+        <main class="text-2x1">
+          <div>
+            <li>
+              <a href="" class="text-xl">Artistas populares</a>
+              <ul class="flex">
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/acdc_icon.png"
+                      alt="Critical Role"
+                      width="150"
+                      height="150"
+                      class="rounded-full"
+                    />
+                    <h3 class="text-sm p-2">AC/DC</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Artista
+                    </p>
+                  </a>
+                </li>
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/maroon5_icon.png"
+                      alt="Flow Podcast"
+                      width="150"
+                      height="150"
+                      class="rounded-full"
+                    />
+                    <h3 class="text-sm p-2">Marron 5</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Artista
+                    </p>
+                  </a>
+                </li>
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/phil_collins_icon.png"
+                      alt="Nerdcast"
+                      width="150"
+                      height="150"
+                      class="rounded-full"
+                    />
+                    <h3 class="text-sm p-2">Phil Collins</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Artista
+                    </p>
+                  </a>
+                </li>
+              </ul>
+              <a href="" class="text-xl">Podcasts</a>
+              <ul class="flex">
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/CRpodcast.png"
+                      alt="Critical Role"
+                      width="150"
+                      height="150 "
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">Critical Role</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Critical Role
+                    </p>
+                  </a>
+                </li>
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/flowpodcast.png"
+                      alt="Flow Podcast"
+                      width="150"
+                      height="150"
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">Flow Podcast</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Estudio Flow
+                    </p>
+                  </a>
+                </li>
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/Nerdcast.png"
+                      alt="Nerdcast"
+                      width="150"
+                      height="150"
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">Nerdcast</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Jovem Nerd
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Musicas que takvez você curta</a>
+              <ul class="flex">
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/pentakill_3.png"
+                      alt="Lost Chapter"
+                      width="150"
+                      height="150"
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">III: Lost Chapter</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Pentakill
+                    </p>
+                  </a>
+                </li>
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/American_Idiot.png"
+                      alt="American Idiot"
+                      width="150"
+                      height="150"
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">American Idiot</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Green Day
+                    </p>
+                  </a>
+                </li>
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/Godhunter.png"
+                      alt="Godhunter"
+                      width="150"
+                      height="150"
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">Godhunter</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Aviators
+                    </p>
+                  </a>
+                </li>
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/A_Thousand_Eyes.png"
+                      alt="A Thousand Eyes"
+                      width="150"
+                      height="150"
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">A Thousand Eyes</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Miracle Of Sound
+                    </p>
+                  </a>
+                </li>
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/Awaken.png"
+                      alt="Awaken"
+                      width="150"
+                      height="150"
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">Awaken</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      League of Legends, Valerie Broussard, Rey Chen
+                    </p>
+                  </a>
+                </li>
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/elden_ring.png"
+                      alt="Elden Ring OST"
+                      width="150"
+                      height="150"
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">Godskin Apostles</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Tai Tomisawa
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Estações de rádio populares</a>
+              <ul class="flex">
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/queen_radio.png"
+                      alt="Queen Radio"
+                      width="150"
+                      height="150"
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">Rádio de Queen</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Queen
+                    </p>
+                  </a>
+                </li>
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image//green_day_radio.png"
+                      alt="Green Day Radio"
+                      width="150"
+                      height="150"
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">Rádio de Green Day</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Green Day
+                    </p>
+                  </a>
+                </li>
+                <li class="p-4 hover:bg-zinc-700 rounded">
+                  <a href="">
+                    <img
+                      src="/image/coldplay_radio.png"
+                      alt="Coldplay Radio"
+                      width="150"
+                      height="150"
+                      class="rounded"
+                    />
+                    <h3 class="text-sm p-2">Rádio de Coldplay</h3>
+                    <p class="text-xs text-gray-300 pl-2 max-w-36 text-wrap">
+                      Coldplay
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!---->
+    <footer class="bg-black text-white py-4 text-center fixed bottom-0 w-full">
+        footer
+    </footer>
+  </body>
 </html>
