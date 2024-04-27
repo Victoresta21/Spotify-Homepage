@@ -13,8 +13,16 @@
       <!--Aqui fica o navegador de innicio e busca + Bilbioteca com playlists-->
       <div class="fixed h-screen w-60 ml-2 mt-2">
         <div class="bg-zinc-900 rounded">
+          <a href="">
+            <img
+              src="/image/Spotify_Logo_CMYK_White.png"
+              alt=""
+              width="80"
+              class="ml-4 pt-4"
+            />
+          </a>
           <nav class="p-2">
-            <li class="pl-4 pt-4 pb-3 block">
+            <li class="pl-4 pt-2 pb-3 block">
               <a href="" class="text-lg">Início</a>
             </li>
             <li class="pl-4 pb-4 block">
@@ -22,20 +30,65 @@
             </li>
           </nav>
         </div>
-        <div class="bg-zinc-900 block mt-2 rounded">
+        <div class="bg-zinc-900 block mt-2 rounded p-4 h-3/4">
           <nav>
             <p class="text-lg block">Sua Biblioteca</p>
           </nav>
+          <div class="bg-zinc-800 mt-3 rounded p-2 w-52 h-36">
+            <h2>Crie sua primeira playslist</h2>
+            <p class="text-sm pt-1">É fácil, vamos te ajudar.</p>
+            <button
+              class="text-black ml-2 mt-8 bg-white rounded-full p-1 text-sm w-32 hover:text-base"
+            >
+              Criar playlist
+            </button>
+          </div>
+          <div class="bg-zinc-800 mt-4 rounded p-2 w-52 h-44">
+            <h2>Que tal seguir um podecast novo?</h2>
+            <p class="text-sm pt-1">Avisaremos você sobre novos episódios.</p>
+            <button
+              class="text-black ml-2 mt-6 bg-white rounded-full p-1 text-sm text-nowrap hover:text-base"
+            >
+              Explorar podecasts
+            </button>
+          </div>
+          <div class="mt-20 rounded p-2 flex flex-wrap">
+            <a href="">
+              <p class="text-xs mr-4">Legal</p>
+            </a>
+            <a href="">
+              <p class="text-xs mr-4">Segurança e centro de privacidade</p>
+            </a>
+            <a href="">
+              <p class="text-xs mr-4">Política de privacidade</p>
+            </a>
+            <a href="">
+              <p class="text-xs mr-4">Cookies</p>
+            </a>
+            <a href="">
+              <p class="text-xs mr-4">Sobre anúncios</p>
+            </a>
+            <a href="">
+              <p class="text-xs mr-4">Acessiblilidade</p>
+            </a>
+            <a href="">
+              <p class="text-xs mr-4">Cookies</p>
+            </a>
+          </div>
+          <button class="text-white ml-3 mt-5 rounded-full p-1 border-2 border-gray-400 text-sm text-nowrap hover:text-base hover:border-white"
+          >
+            Português do Brasil
+          </button>
         </div>
       </div>
       <!--area principal onde ficamas musicas-->
       <div
-        class="flex-1 p-4 ml-64 mt-2 mr-2 mb-16 bg-zinc-800 text-white rounded"
+        class="flex-1 p-4 ml-64 mt-2 mr-2 mb-20 bg-zinc-800 text-white rounded"
       >
         <main class="text-2x1">
           <div>
-            <li>
-              <a href="" class="text-xl">Artistas populares</a>
+            <div>
+              <a href="" class="text-xl hover:underline">Artistas populares</a>
               <ul class="flex">
                 <li class="p-4 hover:bg-zinc-700 rounded">
                   <a href="">
@@ -83,7 +136,9 @@
                   </a>
                 </li>
               </ul>
-              <a href="" class="text-xl">Podcasts</a>
+            </div>
+            <div>
+              <a href="" class="text-xl hover:underline">Podcasts</a>
               <ul class="flex">
                 <li class="p-4 hover:bg-zinc-700 rounded">
                   <a href="">
@@ -131,9 +186,11 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li>
-              <a href="">Musicas que takvez você curta</a>
+            </div>
+            <div>
+              <a href="" class="text-xl hover:underline"
+                >Musicas que talvez você curta</a
+              >
               <ul class="flex">
                 <li class="p-4 hover:bg-zinc-700 rounded">
                   <a href="">
@@ -226,9 +283,11 @@
                   </a>
                 </li>
               </ul>
-            </li>
-            <li>
-              <a href="">Estações de rádio populares</a>
+            </div>
+            <div>
+              <a href="" class="text-xl hover:underline"
+                >Estações de rádio populares</a
+              >
               <ul class="flex">
                 <li class="p-4 hover:bg-zinc-700 rounded">
                   <a href="">
@@ -276,14 +335,14 @@
                   </a>
                 </li>
               </ul>
-            </li>
+            </div>
           </div>
         </main>
       </div>
     </div>
     <!---->
     <footer class="bg-black text-white py-4 text-center fixed bottom-0 w-full">
-        footer
+      footer
     </footer>
   </body>
 </html>
